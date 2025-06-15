@@ -15,15 +15,15 @@
         </div>
         <div class="mBody">
             <nav>
-                <a href="./templates/services.html">
+                <a href="/templates/services.html">
                     <figure><img src="static/images/services.png" alt="services"></figure>
                     <p>Services</p>
                 </a>
-                <a href="./templates/contact.html">
+                <a href="/templates/contact.html">
                     <figure><img src="static/images/contact.png" alt="contact"></figure>
                     <p>Contacts</p>
                 </a>
-                <a href="./templates/notify.html">
+                <a href="/templates/notify.html">
                     <figure><img src="static/images/notifications.png" alt="notifications"></figure>
                     <p>Notifications</p>
                 </a>
@@ -111,9 +111,9 @@
     </header>
 
     <main>
-        <section class="sliderImg">
+        <section class="sliderImg" aria-label="Galerie photos">
             <div class="screen">
-                <ul>
+                <ul id="imageCarousel">
                     <li>
                         <img src="static/images/im4.jpeg" alt="im4">
                     </li>
@@ -132,20 +132,16 @@
                 </ul>
             </div>
             <div class="btn">
-                <button class="left">
-                    <img src="static/images/arrowLeft.png" alt="arrowLeft">
+                <button class="left" id="prevBtn" aria-label="Précédent">
+                    <img src="static/images/arrowLeft.png" alt="">
                 </button>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-                <button class="right">
-                    <img src="static/images/arrowRight.png" alt="arrowRight">
+                <ul id="indicatorDots"></ul>
+                <button class="right" id="nextBtn" aria-label="Suivant">
+                    <img src="static/images/arrowRight.png" alt="">
                 </button>
             </div>
         </section>
+
         <section class="skills">
             <ul>
                 <li>
@@ -168,6 +164,7 @@
                 </li>
             </ul>
         </section>
+
         <article>
             <h1>Quoi de neuf chez nous?</h1>
             <ul>

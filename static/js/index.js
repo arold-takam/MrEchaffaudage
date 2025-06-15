@@ -33,3 +33,70 @@ btnClose.addEventListener("click", (e) => {
     articleDetails.style.opacity = "0";
     articleDetails.style.zIndex = "0";
 });
+
+
+//Gestion du caroussel--------------------------------------------------------
+document.addEventListener('DOMContentLoaded', () => {
+    const carousel = document.querySelector('#imageCarousel');
+    const images = carousel.querySelectorAll('li');
+    const indicatorDots = document.querySelector('#indicatorDots');
+    const prevBtn = document.querySelector('#prevBtn');
+    const nextBtn = document.querySelector('#nextBtn');
+
+    let currentIndex = 0;
+    const totalImages = images.length;
+    let autoSlideInterval;
+
+    // Générer les dots dynamiquement
+    images.forEach((_, i) => {
+        const dot = document.createElement('li');
+        dot.addEventListener('click', () => {
+            currentIndex = i;
+            updateCarousel();
+            resetAutoSlide();
+        });
+        indicatorDots.appendChild(dot);
+    });
+
+    const dots = indicatorDots.querySelectorAll('li');
+
+    function updateCarousel() {
+        carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+        dots.forEach((dot, index) => {
+            dot.classList.toggle('active', index === currentIndex);
+        });
+    }
+
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % totalImages;
+        updateCarousel();
+    }
+
+    function prevSlide() {
+        currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+        updateCarousel();
+    }
+
+    function startAutoSlide() {
+        autoSlideInterval = setInterval(nextSlide, 5000); // change toutes les 5s
+    }
+
+    function resetAutoSlide() {
+        clearInterval(autoSlideInterval);
+        startAutoSlide();
+    }
+
+    nextBtn.addEventListener('click', () => {
+        nextSlide();
+        resetAutoSlide();
+    });
+
+    prevBtn.addEventListener('click', () => {
+        prevSlide();
+        resetAutoSlide();
+    });
+
+    updateCarousel();
+    startAutoSlide();
+});
