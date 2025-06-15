@@ -12,6 +12,7 @@
 body{
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100%;
     height: 100dvh;
     scroll-behavior: smooth;
@@ -37,7 +38,7 @@ body{
             align-items: center;
             justify-content: space-between;
             width: 100%;
-            height: 8rem;
+            height: 6rem;
             border-bottom: 2px solid white;
             padding: 0 2rem;
             transition: all 0.5s;
@@ -46,8 +47,8 @@ body{
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                width: 5rem;
-                height: 5rem;
+                width: 4rem;
+                height: 4rem;
                 background-color: transparent;
                 border: 1px solid white;
                 border-radius: 50%;
@@ -61,7 +62,7 @@ body{
 
             & .home{
                 color: white;
-                font-size: 5.5rem;
+                font-size: 2rem;
                 font-weight: bold;
                 text-decoration: none;
             }
@@ -175,7 +176,7 @@ body{
 
             & a{
                 color: white;
-                font-size: 5rem;
+                font-size: 2rem;
                 font-weight: bold;
                 text-decoration: none;
             }
@@ -184,8 +185,8 @@ body{
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                width: 4.5rem;
-                height: 4.5rem;
+                width: 4rem;
+                height: 4rem;
                 border: solid 1px white;
                 border-radius: 50%;
                 padding: 0.1rem;
@@ -263,7 +264,8 @@ body{
                     background-color: var(--main-color);
                     border-radius: 1rem;
                     color: white;
-                    font-size: 3rem;
+                    font-size: 2rem;
+                    font-weight: bold;
                     padding: 1rem;
                     text-decoration: none;
                     transition: all 0.5s ease-in-out;
@@ -281,7 +283,7 @@ body{
                 justify-content: center;
                 gap: 1rem;
                 min-height: 15rem;
-                font-size: 2.5rem;
+                font-size: 2rem;
                 padding: 0 2rem;
 
                 & h4{
@@ -301,7 +303,7 @@ body{
             & h3{
                 align-self: flex-start;
                 color: var(--main-color);
-                font-size: 4rem;
+                font-size: 2rem;
             }
 
             & .skills{
@@ -331,8 +333,8 @@ body{
                             display: flex;
                             align-items: center;
                             justify-content: center;
-                            width: 15rem;
-                            height: 15rem;
+                            width: 12rem;
+                            height: 12rem;
                             background-color: var(--main-color);
                             border-radius: 50%;
                             padding: 2rem;
@@ -345,7 +347,7 @@ body{
 
                         & figcaption{
                             color: var(--main-color);
-                            font-size: xx-large;
+                            font-size: x-large;
                         }
                     }
                 }
@@ -361,7 +363,7 @@ body{
         align-items: center;
         justify-content: space-between;
         width: 100%;
-        height: 8rem;
+        height: 5rem;
         background-color: var(--main-color);
         padding: 0 2rem;
         transition: all 0.5s;
@@ -371,8 +373,8 @@ body{
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 6rem;
-            height: 6rem;
+            width: 4rem;
+            height: 4rem;
 
             & img{
                 width: 100%;
@@ -384,8 +386,8 @@ body{
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 5rem;
-            height: 5rem;
+            width: 4rem;
+            height: 4rem;
 
             & img{
                 width: 100%;
@@ -399,7 +401,7 @@ body{
 
         & .home{
             color: white;
-            font-size: 5.5rem;
+            font-size: 2rem;
             font-weight: bold;
             text-decoration: none;
         }
@@ -411,7 +413,7 @@ body{
 
     & main{
         position: relative;
-        top: 9rem;
+        top: 6rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -558,7 +560,7 @@ body{
 
             & h1{
                 color: var(--main-color);
-                font-size: 4.5rem;
+                font-size: 4rem;
                 margin-left: 2rem;
             }
 
@@ -566,7 +568,7 @@ body{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                gap: 2rem;
+                gap: 4rem;
                 width: 100%;
                 list-style: none;
 
@@ -576,7 +578,7 @@ body{
                     align-items: center;
                     gap: 1rem;
                     width: 100%;
-                    box-shadow: 0px 0px 10px 3px var(--main-color);
+                    box-shadow: 0px 0px 8px 2px #536dfe;
                     padding: 1rem 0;
 
                     & figure{
@@ -600,7 +602,7 @@ body{
                         justify-content: space-between;
                         gap: 2rem;
                         width: 100%;
-                        font-size: 3rem;
+                        font-size: 2rem;
                         padding: 0 2rem;
 
                         & .more{
@@ -615,7 +617,8 @@ body{
                                 border: none;
                                 border-radius: 0.5rem;
                                 color: white;
-                                font-size: 3rem;
+                                font-size: 2rem;
+                                font-weight: bold;
                                 padding: 0.5rem 1rem;
                             }
                         }
