@@ -225,9 +225,9 @@ body{
             align-items: center;
             justify-content: space-between;
             width: 100%;
-            padding: 2rem;
             background-color: var(--main-color);
             z-index: 10;
+            padding: 1rem 12rem;
 
             & a{
                 color: white;
@@ -240,8 +240,8 @@ body{
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                width: 4rem;
-                height: 4rem;
+                width: 3rem;
+                height: 3rem;
                 border: solid 1px white;
                 border-radius: 50%;
                 padding: 0.1rem;
@@ -260,6 +260,7 @@ body{
             align-items: center;
             gap: 3rem;
             width: 100%;
+            padding: 0 12rem;
 
             & .screen{
                 display: flex;
@@ -268,14 +269,13 @@ body{
                 justify-content: center;
                 gap: 1rem;
                 width: 100%;
-                padding: 0 2rem;
 
                 & .mainImg{
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     width: 100%;
-                    height: 70rem;
+                    height: 60rem;
                     border-radius: 1rem;
                     overflow: hidden;
 
@@ -319,8 +319,7 @@ body{
                     background-color: var(--main-color);
                     border-radius: 1rem;
                     color: white;
-                    font-size: 2rem;
-                    font-weight: bold;
+                    font-size: 3rem;
                     padding: 1rem;
                     text-decoration: none;
                     transition: all 0.5s ease-in-out;
@@ -338,7 +337,7 @@ body{
                 justify-content: center;
                 gap: 1rem;
                 min-height: 15rem;
-                font-size: 2rem;
+                font-size: 2.5rem;
                 padding: 0 2rem;
 
                 & h4{
@@ -353,12 +352,12 @@ body{
             align-items: center;
             gap: 1rem;
             width: 100%;
-            padding: 0 2rem;
+            padding: 0 12rem;
 
             & h3{
                 align-self: flex-start;
                 color: var(--main-color);
-                font-size: 2rem;
+                font-size: 4rem;
             }
 
             & .skills{
@@ -388,8 +387,8 @@ body{
                             display: flex;
                             align-items: center;
                             justify-content: center;
-                            width: 12rem;
-                            height: 12rem;
+                            width: 15rem;
+                            height: 15rem;
                             background-color: var(--main-color);
                             border-radius: 50%;
                             padding: 2rem;
@@ -402,7 +401,7 @@ body{
 
                         & figcaption{
                             color: var(--main-color);
-                            font-size: x-large;
+                            font-size: xx-large;
                         }
                     }
                 }
@@ -984,7 +983,7 @@ body{
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 4rem;
+            gap: 1rem;
             width: 100%;
             scroll-behavior: smooth;
             padding-bottom: 1rem;
@@ -1002,7 +1001,7 @@ body{
                     flex-direction: column;
                     align-items: center;
                     gap: 2rem;
-                    width: 72%;
+                    width: 80%;
                     list-style: none;
 
                     & li{
@@ -1013,7 +1012,7 @@ body{
                         background-color: white;
                         border-radius: 1rem;
                         overflow: hidden;
-                        box-shadow: 0px 0px 10px 3px var(--main-color);
+                        box-shadow: 0px 0px 8px 2px var(--main-color);
                         padding: 1rem 0;
 
                         & figure{
