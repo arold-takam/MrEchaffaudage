@@ -285,13 +285,13 @@ body{
 
                         & .head{
                             display: flex;
-                            align-items: flex-start;
+                            align-items: flex-end;
                             justify-content: space-between;
                             width: 100%;
 
                             & h4{
                                 color: var(--main-color);
-                                font-size: 4rem;
+                                font-size: 3rem;
                             }
 
                             & p{
@@ -321,7 +321,7 @@ body{
                                 gap: 1rem;
                                 width: 100%;
                                 border: none ;
-                                font-size: 3.5rem;
+                                font-size: 3rem;
                                 text-decoration: none;
                             }
                         }
